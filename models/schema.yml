@@ -1,7 +1,6 @@
 
 version: 2
 
-ersion: 2
 
 models:
     - name: covid19
@@ -10,13 +9,13 @@ models:
           - name: iso_code
             description: "The country code"
             tests:
-                - unique
-                - not_null
+              - unique
+              - not_null
 
-  - name: population
-    description: "A starter dbt model"
-    columns:
-      - name: Code
-        description: "The primary key for this table"
-        tests:
-          - not_null
+    - name: population
+      description: "A starter dbt model"
+      columns:
+          - name: Code
+            description: "The primary key for this table"
+            tests:
+              - not_null
