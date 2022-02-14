@@ -1,21 +1,22 @@
 
 version: 2
 
-models:
-  - name: my_first_dbt_model
-    description: "A starter dbt model"
-    columns:
-      - name: id
-        description: "The primary key for this table"
-        tests:
-          - unique
-          - not_null
+ersion: 2
 
-  - name: my_second_dbt_model
+models:
+    - name: covid19
+      description: "A model of latest stats for covid19"
+      columns:
+          - name: iso_code
+            description: "The country code"
+            tests:
+                - unique
+                - not_null
+
+  - name: population
     description: "A starter dbt model"
     columns:
-      - name: id
+      - name: Code
         description: "The primary key for this table"
         tests:
-          - unique
           - not_null
