@@ -1,2 +1,2 @@
 
-select "code", "year", "continent", "total_population" from population_prosperity
+select "code", "year", "continent", "Population" from population_prosperity
