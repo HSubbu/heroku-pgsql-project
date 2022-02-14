@@ -1,1 +1,4 @@
-select "iso_code", "total_cases", "new_cases", "total_cases_per_million"  from covid19
+select c.iso_code, c.total_cases, c.new_cases, c.total_cases_per_million,p.total_population,p.continent 
+   from covid19  c
+join population p
+on c.iso_code = p.code
